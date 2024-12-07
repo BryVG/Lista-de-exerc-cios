@@ -5,7 +5,7 @@ int main() {
     int maior, menor;
 
     // Leitura dos valores da matriz
-    printf("Digite os 9 elementos da matriz 3x3:\n");
+    printf("Digite os nove elementos da matriz 3x3:\n");
     for (int i = 0; i < 3; i++) {
         for (int j = 0; j < 3; j++) {
             printf("Elemento [%d][%d]: ", i, j);
@@ -13,11 +13,11 @@ int main() {
         }
     }
 
-    // Inicializando maior e menor com o primeiro elemento da matriz
+   
     maior = matriz[0][0];
     menor = matriz[0][0];
 
-    // Percorrendo a matriz para encontrar o maior e o menor valor
+
     for (int i = 0; i < 3; i++) {
         for (int j = 0; j < 3; j++) {
             if (matriz[i][j] > maior) {
@@ -29,9 +29,8 @@ int main() {
         }
     }
 
-    // Exibindo os resultados
-    printf("O maior elemento da matriz: %d\n", maior);
-    printf("O menor elemento da matriz: %d\n", menor);
+    printf("maior elemento da matriz: %d\n", maior);
+    printf("menor elemento da matriz: %d\n", menor);
 
     return 0;
 }
